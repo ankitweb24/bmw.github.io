@@ -1,0 +1,152 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+	background-image: url("taj2.jpg");
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+}
+.highway{
+	background-image: url("highway.png");
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 1;
+	height: 150px;
+	width: 500%;
+	display: block;
+	background-repeat: repeat-x;
+	animation: highway 22s linear infinite;
+}
+@keyframes highway{
+	100%{
+		transform: translateX(-3400px);
+	}
+}
+.city{
+	background-image: url("city.png");
+	z-index: -1;
+	position: absolute;
+	bottom: 7vh;
+	height: 364px;
+	width: 542%;
+	display: block;
+	background-repeat: repeat-x;
+	animation: city 20s linear infinite;
+}
+@keyframes city{
+	100%{
+		transform: translateX(-3400px);
+	}
+}
+.car{
+	position: absolute;
+	width: 100px;
+	top: 350px;
+	z-index: 2;
+}
+.car img{
+	width: 53vh;
+	top: 46px;
+	left: 70px;
+	position: absolute;
+	animation: car 1s linear infinite;
+}
+
+@keyframes car{
+	100%{
+		transform: translateY(-1px);
+	}
+	50%{
+		transform: translateY(1px);
+	}
+	0%{
+		transform: translateY(-1px);
+	}
+}
+.wheel img{
+	width: 48px;
+	height: 48px;
+	animation:wheel 77ms linear infinite;
+	border-radius:50px;
+}
+@keyframes wheel{
+	100%{
+		transform: rotate(360deg);
+	}
+}
+.back-wheel{
+	left: 118px;
+	top: 77.4vh;
+	position: absolute;
+	z-index: 3;
+}
+.front-wheel{
+	left:327px;
+	top: 77.3vh;
+	position: absolute;
+	z-index: 3;
+}
+.car-two img{
+	position: absolute;
+	top: 62vh;
+	z-index: 3;
+	left: 80vh;
+	width: 50vh;
+	animation: car-two 2s linear infinite;
+}
+@keyframes car-two{
+	100%{
+		transform: translateY(-1px);
+	}
+	50%{
+		transform: translateY(1px);
+	}
+	0%{
+		transform: translateY(-1px);
+	}
+}
+.car-two-wheel img{
+	width: 42px;
+	height: 42px;
+	animation: car-twoo 1s linear infinite;
+	border-radius:50px;
+}
+@keyframes car-twoo{
+	100%{
+		transform: rotate(360deg);
+	}
+}
+.next-wheel{
+	position: absolute;
+	top: 81vh;
+	left: 117.3vh;
+	z-index: 3;
+}
+.prev-wheel{
+	position: absolute;
+	top: 81vh;
+	left: 86.4vh;
+	z-index: 3;
+}
+h3{
+	text-align: center;
+	border: none;
+	box-shadow: 5px 5px 10px #2b0a0ac4;
+	border-bottom: 2px solid black;
+	border-bottom-right-radius: 50px;
+	border-bottom-left-radius: 50px;
+	position: absolute;
+	top: 20px;
+	height: 50px;
+	width: 80vh;
+	left: 44vh;
+	font-size: 40px;
+	color: #060000d6;
+	font-family: BellMT;
+	letter-spacing: 3px;
+	background-image: linear-gradient(#3300ff66,#00dcff,#04ea60);
+}
